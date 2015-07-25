@@ -34,4 +34,21 @@ For a given number, return the sequence from 1 to that number but with the follo
   7
 ```
 
+## Implementation
+
+I'll use [RSpec](http://rspec.info/) for the tests because it can be used for [TDD](http://guide.agilealliance.org/guide/tdd.html) as well as [BDD](http://guide.agilealliance.org/guide/bdd.html) and the syntax has been used in others testing frameworks because its readability.
+
+To setup the initial enviroment I had to have Ruby and RSpec installed in my machine. If you have Ruby in your machine you can install RSpec with this command:
+
+```
+$ gem install rspec
+```
+
+Then I created the minimal structure (which I've added to the repo) with the command:
+
+```
+$ rspec --init
+```
+
+> **NOTE:** I've added the option `--format documentation` to the generated `.rspec` file so I see better what the tests actually do.
 
