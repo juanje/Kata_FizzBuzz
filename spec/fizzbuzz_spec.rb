@@ -33,4 +33,8 @@ describe "FizzBuzz parser" do
     expect(sequence(1)).to eq('1\n')
   end
 
+  it "should return '1\\nFizz\\n' when the number is divisible by 2" do
+    expect(sequence(2)).to eq('1\nFizz\n')
+  end
+
 end
