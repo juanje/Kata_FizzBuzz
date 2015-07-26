@@ -24,4 +24,9 @@
 #
 
 describe "FizzBuzz parser" do
+
+  it "should return '1\\n' when the number is '1'" do
+    expect(sequence(1)).to eq('1\n')
+  end
+
 end
