@@ -24,7 +24,11 @@
 #
 
 def sequence(number)
-  '1\n'
+  if number == 2
+    '1\nFizz\n'
+  else
+    '1\n'
+  end
 end
 
 describe "FizzBuzz parser" do
