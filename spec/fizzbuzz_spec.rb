@@ -1,12 +1,12 @@
 def parse(number)
   if number % 2 == 0 && number % 3 == 0
-    'FizzBuzz'
+    'FizzBuzz\n'
   elsif number % 2 == 0
-    'Fizz'
+    'Fizz\n'
   elsif number % 3 == 0
-    'Buzz'
+    'Buzz\n'
   else
-    number
+    "#{number}\\n"
   end
 end
 
@@ -15,8 +15,7 @@ def sequence(number)
 
   parsed_sequence = ""
   1.upto(number) do |element|
-    parsed = parse(element)
-    parsed_sequence += "#{parsed}\\n"
+    parsed_sequence += parse(element)
   end
   parsed_sequence
 end
