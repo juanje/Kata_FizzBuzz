@@ -26,6 +26,8 @@
 def sequence(number)
   if number == 2
     '1\nFizz\n'
+  elsif number == 3
+    '1\nFizz\nBuzz\n'
   else
     '1\n'
   end
