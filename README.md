@@ -52,3 +52,6 @@ $ rspec --init
 
 > **NOTE:** I've added the option `--format documentation` to the generated `.rspec` file so I see better what the tests actually do.
 
+> **NOTE:** To simplify, I put the code in the same file that the test (the problem was sort and it was easy to edit both at the same file) [spec/fizzbuzz_spec.rb](spec/fizzbuzz_spec.rb), but I plan to move to a more proper place.
+
+> **NOTE**: Also, I decided to add one more case that I thought could be problematic, when the number passed is `0`. And I decided what to do in that case as that wasn't defined at the original exercise.
