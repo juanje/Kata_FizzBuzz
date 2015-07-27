@@ -23,16 +23,25 @@
 #  7
 #
 
-def sequence(number)
-  if number == 2
-    '1\nFizz\n'
-  elsif number == 3
-    '1\nFizz\nBuzz\n'
-  elsif number == 6
-    '1\nFizz\nBuzz\nFizz\n5\nFizzBuzz\n'
+def parse(number)
+  if number % 2 == 0 && number % 3 == 0
+    'FizzBuzz'
+  elsif number % 2 == 0
+    'Fizz'
+  elsif number % 3 == 0
+    'Buzz'
   else
-    '1\n'
+    number
   end
+end
+
+def sequence(number)
+  parsed_sequence = ""
+  1.upto(number) do |element|
+    parsed = parse(element)
+    parsed_sequence += "#{parsed}\\n"
+  end
+  parsed_sequence
 end
 
 describe "FizzBuzz parser" do
