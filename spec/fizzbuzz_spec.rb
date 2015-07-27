@@ -41,4 +41,8 @@ describe "FizzBuzz parser" do
     expect(sequence(2)).to eq('1\nFizz\n')
   end
 
+  it "should return '1\\nFizz\\nBuzz\\n' when the number is divisible by 3" do
+    expect(sequence(3)).to eq('1\nFizz\nBuzz\n')
+  end
+
 end
