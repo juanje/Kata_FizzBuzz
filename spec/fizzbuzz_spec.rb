@@ -36,6 +36,8 @@ def parse(number)
 end
 
 def sequence(number)
+  return "0\\n" if number == 0
+
   parsed_sequence = ""
   1.upto(number) do |element|
     parsed = parse(element)
