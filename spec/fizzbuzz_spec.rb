@@ -62,4 +62,8 @@ describe "FizzBuzz parser" do
     expect(sequence(6)).to eq('1\nFizz\nBuzz\nFizz\n5\nFizzBuzz\n')
   end
 
+  it "should return '0\\n' when the number is '0'" do
+    expect(sequence(0)).to eq('0\n')
+  end
+
 end
