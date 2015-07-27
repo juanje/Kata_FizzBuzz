@@ -28,6 +28,8 @@ def sequence(number)
     '1\nFizz\n'
   elsif number == 3
     '1\nFizz\nBuzz\n'
+  elsif number == 6
+    '1\nFizz\nBuzz\nFizz\n5\nFizzBuzz\n'
   else
     '1\n'
   end
